@@ -20,10 +20,7 @@ npm run build
 npm run test:unit
 ```
 
-### Lints and fixes files
+### Run specific unit test
 ```
-npm run lint
+npm run test:unit filename.spec.js
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
