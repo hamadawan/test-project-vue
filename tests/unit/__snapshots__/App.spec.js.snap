@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.vue Renders correctly 1`] = `
+<div>
+  <header>
+    <h5>
+      New Product
+    </h5>
+  </header>
+   
+  <section>
+    <h4>
+      Product Information
+    </h4>
+     
+    <form
+      autocomplete="off"
+      class="form"
+    >
+      <label
+        for="name"
+      >
+        Name 
+        <span
+          class="required"
+        >
+          *
+        </span>
+      </label>
+       
+      <input
+        class="capitalize"
+        id="name"
+        placeholder="Product Name"
+        type="text"
+      />
+       
+      <!---->
+       
+      <label
+        for="reference"
+      >
+        Reference 
+        <span
+          class="required"
+        >
+          *
+        </span>
+      </label>
+       
+      <input
+        class="uppercase"
+        id="reference"
+        placeholder="XXXXXXXXXX"
+        type="text"
+      />
+       
+      <!---->
+       
+      <label
+        for="price"
+      >
+        Price(s)
+      </label>
+       
+      <p
+        class="prepend"
+      >
+        DAT
+      </p>
+       
+      <input
+        class="price"
+        id="price"
+        inputmode="numeric"
+        min="0"
+        pattern="[0-9]*"
+        placeholder="0"
+        title="Non-negative integral number"
+        type="number"
+      />
+       
+      <!---->
+       
+      <label
+        for="date"
+      >
+        Shipping Date
+      </label>
+       
+      <input
+        class="date"
+        id="date"
+        placeholder="yyyy-mm-dd"
+        type="date"
+      />
+       
+      <!---->
+    </form>
+     
+    <div
+      class="controls"
+    >
+      <button
+        class="clear"
+        id="clear"
+      >
+        Clear
+      </button>
+       
+      <button
+        class="create"
+        id="create"
+      >
+        Create
+      </button>
+    </div>
+  </section>
+   
+  <!---->
+</div>
+`;

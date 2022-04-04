@@ -1,9 +1,9 @@
 import { mount } from '@vue/test-utils'
-import ProductForm from '@/components/ProductForm.vue'
+import App from '../../src/App.vue'
 
-describe('ProductForm.vue', () => {
+describe('App.vue', () => {
   it('Check Name validation', () => {
-    const wrapper = mount(ProductForm)
+    const wrapper = mount(App)
     const input = wrapper.find('#name')
     const button = wrapper.find('#create')
     input.setValue('ha')
@@ -12,7 +12,7 @@ describe('ProductForm.vue', () => {
   })
 
   it('Check Reference validation', () => {
-    const wrapper = mount(ProductForm)
+    const wrapper = mount(App)
     const input = wrapper.find('#reference')
     const button = wrapper.find('#create')
     input.setValue('')
@@ -21,7 +21,7 @@ describe('ProductForm.vue', () => {
   })
 
   it('Check Price validation', () => {
-    const wrapper = mount(ProductForm)
+    const wrapper = mount(App)
     const input2 = wrapper.find('#price')
     const button = wrapper.find('#create')
     input2.setValue(-1)
@@ -30,7 +30,7 @@ describe('ProductForm.vue', () => {
   })
 
   it('Renders correctly', () => {
-    const wrapper = mount(ProductForm)
+    const wrapper = mount(App)
     expect(wrapper.element).toMatchSnapshot()
   })
 })
